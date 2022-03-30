@@ -1,60 +1,50 @@
 <template>
-  <v-app>
+  <v-card class="overflow-hidden v-application">
     <v-app-bar
-      app
-      color="primary"
-      dark
+      absolute
+      color="white"
+      elevate-on-scroll
+      scroll-target="#scrolling-techniques-7"
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+      <div>
+        <h2 class="mb-1">Hi, Dwight</h2>
+        <div class="row" style="margin-left: 0.03rem">
+          <p>1725 Slough Avenue</p>
+          <v-icon class="mb-4" color="primary">mdi-chevron-down</v-icon>
+        </div>
       </div>
-
+      
       <v-spacer></v-spacer>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+      <v-btn icon>
+        <v-icon color="primary" x-large>mdi-cart-variant</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon color="primary" x-large>mdi-emoticon-outline</v-icon>
       </v-btn>
     </v-app-bar>
-
     <v-main>
-      <HelloWorld/>
+      <v-container>
+      </v-container>
     </v-main>
-  </v-app>
+  </v-card>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
   },
-
   data: () => ({
-    //
   }),
 };
 </script>
+<style>
+.v-application {
+  font-family: 'Lato', sans-serif;
+ }
+ .theme--light.v-sheet {
+   color: #3B3F51 !important;
+ }
+</style>
