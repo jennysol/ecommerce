@@ -1,20 +1,19 @@
 <template>
-  <v-card class="overflow-hidden v-application">
-    <app-bar/>
+ <v-app class="v-application">
+  <app-bar/>
     <v-main>
       <v-container>
+        <router-view></router-view>
       </v-container>
     </v-main>
-  </v-card>
+  </v-app>
 </template>
 
 <script>
 import AppBar from './components/layouts/AppBar'
 export default {
   name: 'App',
-  components: {
-    AppBar
-  },
+  components: { AppBar },
   data: () => ({
   }),
 };

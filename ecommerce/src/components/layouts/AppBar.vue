@@ -5,6 +5,7 @@
 		elevate-on-scroll
 		scroll-target="#scrolling-techniques-7"
 		class="mt-4"
+    app
 	>
 		<v-col cols="6">
 			<h2 class="title mb-3">Hi, Dwight</h2>
